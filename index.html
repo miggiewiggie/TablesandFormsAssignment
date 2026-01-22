@@ -4,45 +4,48 @@
     <title>Tables and Forms</title>
 </head>
 <body>
-    <h1>Pizza Ordering Form</h1>
-    <section>
-        <h2>Contact Information</h2>
-        <label for="inName">Name</label>
-        <input type="text" name="inName" id="inName" required><br>
-        <label for="inPhone">Phone</label>
-        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="inPhone" id="inPhone" required><br>
-        <label for="inEmail">Email</label>
-        <input type="email" name="inEmail" id="inEmail" required><br>
-    </section>
-    <section>
-        <h2>Select Pizza Size</h2>
-        <label>Pizza Size:</label>
-        <select name="Pizza Size" id="PizzaSize" required>
-            <option><label>Medium</label></option>
-            <option><label>Large</label></option>
-            <option><label>XLarge</label></option>
-        </select>
-    </section>
-    <section>
-        <h2>Select Sauce</h2>
-        <input type="radio" name="sauceType" required><label>Marinara</label><br>
-        <input type="radio" name="sauceType" required><label>Ranch</label><br>
-        <input type="radio" name="sauceType" required><label>No Sauce</label><br>
-    </section>
-    <section>
-        <h2>Select Toppings</h2>
-        <input type="checkbox" name="toppings"><label>Pepperoni</label>
-        <input type="checkbox" name="toppings"><label>Sausage</label><br>
-        <input type="checkbox" name="toppings"><label>Mushroom</label>
-        <input type="checkbox" name="toppings"><label>Pineapple</label><br>
-        <input type="checkbox" name="toppings"><label>Peppers</label>
-        <input type="checkbox" name="toppings"><label>Onions</label><br>
-    </section>
-    <section>
-        <h2>Additonal Instructions</h2>
-        <textarea name="comments">Add Instructions</textarea><br>
-        <input type="submit" name="submitBttn">
-    </section>
+    <form>
+        <h1>Pizza Ordering Form</h1>
+        <section>
+            <h2>Contact Information</h2>
+            <label for="inName">Name</label>
+            <input type="text" name="inName" id="inName" required><br>
+            <label for="inPhone">Phone</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="inPhone" id="inPhone" required><br>
+            <label for="inEmail">Email</label>
+            <input type="email" name="inEmail" id="inEmail" required><br>
+        </section>
+        <section>
+            <h2>Select Pizza Size</h2>
+            <label for="PizzaSize">Pizza Size:</label>
+            <select name="Pizza Size" id="PizzaSize" required>
+                <option value="">--Select a Size--</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="XLarge">XLarge</option>
+            </select>
+        </section>
+        <section>
+            <h2>Select Sauce</h2>
+            <input type="radio" name="sauceType" required><label>Marinara</label><br>
+            <input type="radio" name="sauceType" required><label>Ranch</label><br>
+            <input type="radio" name="sauceType" required><label>No Sauce</label><br>
+        </section>
+        <section>
+            <h2>Select Toppings</h2>
+            <input type="checkbox" name="toppings"><label>Pepperoni</label>
+            <input type="checkbox" name="toppings"><label>Sausage</label><br>
+            <input type="checkbox" name="toppings"><label>Mushroom</label>
+            <input type="checkbox" name="toppings"><label>Pineapple</label><br>
+            <input type="checkbox" name="toppings"><label>Peppers</label>
+            <input type="checkbox" name="toppings"><label>Onions</label><br>
+        </section>
+        <section>
+            <h2>Additonal Instructions</h2>
+            <textarea name="comments">Add Instructions</textarea><br>
+            <input type="submit" name="submitBttn">
+        </section>
+    </form>
     <section>
         <h2>List of My Favorite Games</h2>
         <table border="1">
@@ -82,5 +85,4 @@
         </table>
     </section>
 </body>
-
 </html>
